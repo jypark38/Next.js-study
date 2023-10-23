@@ -1,1 +1,1 @@
-# Next.js-study
+# Next.js_Study

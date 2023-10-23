@@ -1,0 +1,56 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "title": "html",
+      "body": "html is ..."
+    },
+    {
+      "id": 2,
+      "title": "css",
+      "body": "css is ..."
+    },
+    {
+      "title": "typescript",
+      "body": "typescript is ...",
+      "id": 3
+    },
+    {
+      "title": "NEXTJS",
+      "body": "NEXTJS is ..",
+      "id": 7
+    },
+    {
+      "title": "sasss",
+      "body": "sass is ...",
+      "id": 8
+    },
+    {
+      "title": "tailwind",
+      "body": "tailwind...",
+      "id": 9
+    },
+    {
+      "title": "nextjs",
+      "body": "next",
+      "id": 10
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

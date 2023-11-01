@@ -21,3 +21,4 @@ server component에서 위 기능을 쓰고싶으면 client component 를 만들
 
 - usePathname() : 현재 url 출력
 - useSearchParams() : search parameter 출력
+- useParams()

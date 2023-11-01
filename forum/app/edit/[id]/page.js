@@ -1,19 +1,18 @@
-import { connectDB } from "@/util/database";
-import { ObjectId } from "mongodb";
+import EditForm from "./EditForm";
 
 export default async function Edit(props) {
-  const db = (await connectDB).db("forum");
-  const result = await db.collection("post").findOne({ _id: new ObjectId(props.params.id) });
+  // AJAX로 바꿔보기?
+  const post = await fetch("http://localhost:3000/api/post/get?id=" + props.params.id, {
+    method: "GET",
+    cache: "no-store",
+  }).then((res) => {
+    return res.json();
+  });
 
   return (
     <div className="p-20">
       <h4>수정 페이지</h4>
-      <form action={`/api/post/edit`} method="POST">
-        <input name="title" placeholder="글 제목" defaultValue={result.title} />
-        <input name="content" placeholder="글 내용" defaultValue={result.content} />
-        <input name="_id" className="hidden" defaultValue={result._id.toString()} />
-        <button type="submit">전송</button>
-      </form>
+      <EditForm post={post} />
     </div>
   );
 }

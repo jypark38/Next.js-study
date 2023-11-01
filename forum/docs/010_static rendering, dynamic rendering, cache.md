@@ -26,10 +26,10 @@
 
 - /list : static rendering이 되면 안되는데 static rendering 표시가 돼있다.
   - 이런건 이상하니까 dynamic rendering으로 수정해보자
-  - dynamic rendering으로 바꾸려면?
-  - `export const dynamic = 'force-dynamic'` 지정
 
 <hr>
+- dynamic rendering으로 바꾸려면?
+  - `export const dynamic = 'force-dynamic'` 지정
 
 ## dynamic rendering
 

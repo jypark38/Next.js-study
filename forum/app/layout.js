@@ -1,10 +1,10 @@
 import Link from "next/link";
 import "./globals.css";
-import LoginBtn from "./LoginBtn";
+import LoginBtn from "./components/LoginBtn";
 
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
 import { getServerSession } from "next-auth";
-import LogoutBtn from "./LogoutBtn";
+import LogoutBtn from "./components/LogoutBtn";
 
 export const metadata = {
   title: "Create Next App",

@@ -27,7 +27,7 @@
 
   - path하단에 [id] 같이 대괄호로 동적인 path 네이밍
 
-  - **id가 아니여도 됨**
+  - **id가 아니여도 됨, 쿼리키**
 
 `let result = await db.collection("post").findOne({ title: "안녕" });`
 
